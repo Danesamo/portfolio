@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daniela Samo Chouake - Data Engineer Portfolio | Big Data, NLP, Distributed Architectures">
+    <meta name="keywords" content="Data Engineer, Big Data, ETL, Kafka, ClickHouse, NLP, Python, Portfolio">
+    <meta name="author" content="Daniela Samo Chouake">
+    <title>Daniela Samo | Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>DS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Daniela Samo <span class="highlight">Chouake</span></h1>
+                <h2 class="hero-title">
+                    <span class="typing-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Building robust data pipelines and distributed architectures that transform raw data into actionable insights.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Danesamo" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/daniela-samo" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:chouakedaniela@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">pipeline.py</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">DataPipeline</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.sources = [<span class="string">"PostgreSQL"</span>, <span class="string">"Cassandra"</span>]
+        self.destination = <span class="string">"ClickHouse"</span>
+        self.orchestrator = <span class="string">"Airflow"</span>
+
+    <span class="keyword">async def</span> <span class="function">transform</span>(self, data):
+        <span class="comment"># Real-time CDC processing</span>
+        <span class="keyword">return await</span> self.enrich(data)
+
+    <span class="keyword">def</span> <span class="function">run</span>(self):
+        <span class="builtin">print</span>(<span class="string">"Pipeline running..."</span>)
+        <span class="comment"># ~7,700 records/sec</span></code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>Data Engineer</strong> with hands-on experience in building real-time ETL/CDC pipelines,
+                        distributed architectures, and NLP classification systems. My passion lies in transforming complex
+                        data challenges into elegant, scalable solutions.
+                    </p>
+                    <p>
+                        Currently pursuing a <strong>Master in Financial Engineering</strong> at WorldQuant University,
+                        I'm expanding my expertise to the intersection of data science and quantitative finance.
+                    </p>
+                    <p>
+                        <strong>Curious and proactive</strong>, I'm always eager to learn new technologies and contribute
+                        to ambitious data projects within dynamic teams.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500x</span>
+                            <span class="stat-label">Latency Improvement</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">7,700</span>
+                            <span class="stat-label">Records/sec Pipeline</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Big Data & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">ClickHouse</span>
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">Debezium</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>ML & NLP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">spaCy</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">OpenSearch</span>
+                        <span class="skill-tag">scikit-learn</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Cassandra</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">ClickHouse</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Backend & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">REST</span>
+                        <span class="skill-tag">Celery</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps & Monitoring</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Superset</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Plotly</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1: CDC Pipeline -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">Real-Time Data</p>
+                        <h3 class="project-title">CDC Pipeline</h3>
+                        <p class="project-description">
+                            Real-time Change Data Capture pipeline: PostgreSQL → Debezium → Kafka (KRaft) → ClickHouse.
+                            Full CDC operations handling with materialized views.
+                        </p>
+                        <div class="project-tech">
+                            <span>Debezium</span>
+                            <span>Kafka</span>
+                            <span>ClickHouse</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: ETL PillarScan -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">ETL & Analytics</p>
+                        <h3 class="project-title">PillarScan ETL Pipeline</h3>
+                        <p class="project-description">
+                            Multi-source ETL with 3 Airflow DAGs, 14-table schema, ~7,700 records/sec.
+                            100% idempotent pipeline with Superset dashboards.
+                        </p>
+                        <div class="project-tech">
+                            <span>Airflow</span>
+                            <span>ClickHouse</span>
+                            <span>Superset</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: NLP Pipeline -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">NLP & ML</p>
+                        <h3 class="project-title">Distributed NLP Pipeline</h3>
+                        <p class="project-description">
+                            5-level cascade architecture with PySpark: Pattern Matching → NER → k-NN → Sentiment → Zero-Shot.
+                            Target: &lt;500ms/request.
+                        </p>
+                        <div class="project-tech">
+                            <span>PySpark</span>
+                            <span>spaCy</span>
+                            <span>Transformers</span>
+                            <span>OpenSearch</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: AI Classification -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">AI & LLM</p>
+                        <h3 class="project-title">Multi-Phase AI Classifier</h3>
+                        <p class="project-description">
+                            LLM-powered text classification with 4-phase hierarchical pipeline, 10 Cassandra models,
+                            dynamic prompts, and Celery orchestration.
+                        </p>
+                        <div class="project-tech">
+                            <span>LLM</span>
+                            <span>Django</span>
+                            <span>Cassandra</span>
+                            <span>Celery</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Monitoring -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-chart-area"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">DevOps</p>
+                        <h3 class="project-title">Monitoring Infrastructure</h3>
+                        <p class="project-description">
+                            Complete monitoring stack: Prometheus, Grafana, cAdvisor, Node Exporter.
+                            4 production dashboards with security best practices.
+                        </p>
+                        <div class="project-tech">
+                            <span>Prometheus</span>
+                            <span>Grafana</span>
+                            <span>Docker</span>
+                            <span>cAdvisor</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Geolocation -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-expand"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-category">Infrastructure</p>
+                        <h3 class="project-title">GADM Geolocation Pipeline</h3>
+                        <p class="project-description">
+                            NFS server for ML models sharing. GADM → ClickHouse pipeline for 247 countries.
+                            Latency reduced from 500ms to &lt;1ms (500x improvement).
+                        </p>
+                        <div class="project-tech">
+                            <span>NFS</span>
+                            <span>ClickHouse</span>
+                            <span>GeoPandas</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span> Experience & Education
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - Present</span>
+                        <h3>Data Engineer</h3>
+                        <h4>SMATFLOW NGO · Paris, France (Remote)</h4>
+                        <p>Building real-time CDC pipelines, ETL systems, NLP architectures, and monitoring infrastructure. Promoted after successful internship.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2024 - 2025</span>
+                        <h3>ML Engineer Intern</h3>
+                        <h4>SMATFLOW NGO · Paris, France (Remote)</h4>
+                        <p>Developed multi-phase AI classification pipeline with LLM, Cassandra, and Celery orchestration.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>IoT Research Intern</h3>
+                        <h4>AIRC-ITI Laboratory · Hanoi, Vietnam</h4>
+                        <p>Research on connected technologies for education. Co-authored published research project.</p>
+                    </div>
+                </div>
+                <div class="timeline-item education">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - 2027</span>
+                        <span class="badge">In Progress</span>
+                        <h3>Master in Financial Engineering (MScFE)</h3>
+                        <h4>WorldQuant University · Washington D.C.</h4>
+                        <p>Financial mathematics, data science and ML applied to markets. DEAC Accredited.</p>
+                    </div>
+                </div>
+                <div class="timeline-item education">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2025</span>
+                        <h3>Master in Computer Science (Dual Degree)</h3>
+                        <h4>VNU Hanoi & University of La Rochelle</h4>
+                        <p>Intelligent Systems and Multimedia · ICONE Program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span> Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    I'm currently open to new opportunities and always excited to discuss data engineering challenges.
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-info">
+                    <a href="mailto:chouakedaniela@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>chouakedaniela@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/daniela-samo" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/daniela-samo</span>
+                    </a>
+                    <a href="https://github.com/Danesamo" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/Danesamo</span>
+                    </a>
+                </div>
+                <a href="mailto:chouakedaniela@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </a>
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    <span>Available for opportunities · Remote / On-site / Hybrid</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <strong>Daniela Samo Chouake</strong></p>
+            <p class="copyright">&copy; 2026 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
